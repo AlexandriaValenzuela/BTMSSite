@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            background: url('bus-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .form-container h2 {
+            color: #333;
+        }
+        input[type="email"] {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0052cc;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #003d99;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="flex items-center mt-4 mb-8 w-4/5"></div>
+        
+        <h2>Forgot Password?</h2>
+        <hr class="border w-full border-[#00446b]">
+<p2 style="color:black"></p2>
+        <p2>Enter email address that is associated with your account</p2>
+            <p2 style="color:black"></p2>
+        <form action="process_forgot_password.php" method="POST">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <button type="submit">Recover Password</button>
+        </form>
+    </div>
